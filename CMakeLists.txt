@@ -78,7 +78,7 @@ if(MSVC)
     add_definitions("/wd4819")
 
     # disable use of POSIX name warnings
-    add_definitions("/D_CRT_NONSTDC_NO_WARNINGS /D_CRT_SECURE_NO_WARNINGS")
+    add_definitions("/D_CRT_NONSTDC_NO_WARNINGS /D_CRT_SECURE_NO_WARNINGS /D_DISABLE_EXTENDED_ALIGNED_STORAGE")
 
     # supress C4503 - VC++ dislikes if a name is too long. If you get
     # weird and mysterious linking errors, you can disable this, but you'll have to
